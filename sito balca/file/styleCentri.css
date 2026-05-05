@@ -1,0 +1,741 @@
+/* ================= BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #fff;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(90deg,#000,#b30000);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:4px solid #f2c400;
+    z-index:1000;
+}
+
+header h1 {
+    color:#f2c400;
+    font-size:22px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#f2c400;
+}
+
+section {
+    padding-top:120px;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 180px;
+    border: 2px solid yellow;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid yellow;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b30000, #000);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 350px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: #f2c400;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* ================= INTRO ================= */
+.intro-section {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 50px;
+    color: #ff0000;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding: 50px 20px;
+}
+
+/* ================= BLOCK ================= */
+.block {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.block.left {
+    justify-content: flex-start;
+}
+
+.block.right {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.block.center {
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ================= TESTO ================= */
+.text h2 {
+    font-size: 34px;
+    color: #f2c400;
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.text h4{
+    font-size: 25px;
+    color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+/* ================= IMMAGINI ================= */
+.block img {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* FIX immagini grandi singole */
+.panel-img3,
+.panel-img4,
+.panel-img5,
+.panel-img6,
+.panel-img7,
+.panel-img8,
+.panel-img9,
+.panel-img10,
+.panel-img11,
+.panel-img12,
+.panel-img13 {
+    width: 450px;
+    max-width: 100%;
+}
+
+/* ================= FAQ ================= */
+.faq-title {
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    background: #0b0b0b;
+}
+
+.faq-title h2 {
+    font-size: 50px;
+    color: #ff0000;
+    letter-spacing: 3px;
+}
+
+.faq-section {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-row {
+    display: flex;
+    width: 100%;
+    padding: 30px 60px;
+    background: #111;
+    border-left: 6px solid #b30000;
+    align-items: center;
+    gap: 40px;
+}
+
+.faq-question {
+    flex: 1;
+    color: #f2c400;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.faq-answer {
+    flex: 2;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ================= TABLE SECTION ================= */
+.table-section {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.table-title {
+    text-align: center;
+    padding: 80px 20px 30px 20px;
+}
+
+.table-title h2 {
+    font-size: 55px;
+    color: #f2c400;
+}
+
+.table-desc {
+    max-width: 900px;
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* TABELLA */
+.custom-table {
+    width: 80%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #b30000;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.custom-table th {
+    background: #b30000;
+    color: #f2c400;
+}
+
+.custom-table td {
+    color: black;
+}
+
+.custom-table tr:hover td {
+    background: #ddd;
+}
+
+/* TABELLA 2 */
+.table2-section {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.table2-title {
+    text-align: center;
+    padding: 80px 20px 30px 20px;
+}
+
+.table2-title h2 {
+    font-size: 55px;
+    color: #f2c400;
+}
+
+.table2-desc {
+    max-width: 900px;
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* TABELLA */
+.custom-table2 {
+    width: 60%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    background: white;
+    margin-left: 50px;
+}
+
+.custom-table2 th,
+.custom-table2 td {
+    border: 1px solid #b30000;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* PRIMA RIGA */
+.custom-table2 tr:first-child th,
+.custom-table2 tr:first-child td {
+    background: #b30000;
+    color: #f2c400;
+}
+
+/* PRIMA COLONNA (escludendo prima riga) */
+.custom-table2 tr:not(:first-child) th {
+    color: black;
+}
+
+/* celle normali */
+.custom-table2 td {
+    color: black;
+}
+
+/* hover */
+.custom-table2 tr:hover td {
+    background: #ddd;
+}
+
+.custom-table2 tr:hover th {
+    background: #ddd;
+}
+
+.small-red {
+    margin-top: -25px;
+    font-size: 14px;
+    color: #b30000;   /* 🔴 rosso */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ================= IMMAGINI VOLANTINO =================== */
+
+.table-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+/* colonna immagini */
+.table-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* immagini */
+.table-images img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* overlay scuro */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* immagine ingrandita */
+#overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* cursore cliccabile */
+.zoomable {
+    cursor: pointer;
+}
+
+/* ================= CONTAINER PRINCIPALE ================= */
+.identity-container {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    text-align: center;
+}
+
+/* ================= TITOLO ================= */
+.identity-title {
+    font-size: 42px;
+    color: #f2c400;
+    letter-spacing: 2px;
+}
+
+/* ================= TESTO INTRO ================= */
+.identity-text {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* ================= BLOCCHI ================= */
+.identity-block {
+    background: #111;
+    padding: 30px;
+    border-left: 6px solid #b30000;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* titolo blocchi */
+.identity-block h3 {
+    color: #ff0000;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* testo blocchi */
+.identity-block p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* evidenziazioni */
+.identity-block strong {
+    color: #f2c400;
+}
+
+
+/* ================= SEZIONE PDF ================= */
+.pdf-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    text-align: center;
+}
+
+.pdf-intro {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.pdf-title {
+    font-size: 45px;
+    color: #f2c400;
+    letter-spacing: 2px;
+}
+
+.pdf-group {
+    background: #111;
+    padding: 25px;
+    border-left: 6px solid #b30000;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pdf-group h3 {
+    font-size: 22px;
+    color: #ff0000;
+}
+
+.pdf-group a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+
+    background: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.pdf-group a:hover {
+    background: #b30000;
+    color: #f2c400;
+    transform: translateX(5px);
+}
+
+.pdf-small-red {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #b30000;   /* 🔴 rosso */
+    font-weight: bold;
+    text-align: center;
+}
+
+strong{
+    font-size: 30px;
+}
+
+span{
+    font-size: 20px;
+}
+
+/* ================= MODULI ISCRIZIONE ================= */
+
+.modulo-iscrizione {
+    text-align: center;
+    margin: 40px 0;
+    margin-top: -75px; /* riduce spazio sopra la sezione */
+}
+
+.low-text {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.link-text {
+    display: block;
+    font-size: 45px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+    color: #b30000;
+}
+
+.medium-text {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+
+/* ================= CONTATTI ================= */
+.contact-section {
+    min-height:50vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#0d0d0d;
+    text-align:center;
+    border: 2px solid red;
+}
+
+.contact-section h2 {
+    font-size:40px;
+    color:#f2c400;
+    margin-bottom:30px;
+}
+
+.contact-box {
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.contact-item {
+    background:#111;
+    padding:25px 30px;
+    border-left:4px solid #f2c400;
+    min-width:220px;
+    text-align:center;
+}
+
+.contact-item h3 {
+    color:#f2c400;
+    margin-bottom:10px;
+}
+
+.contact-item p {
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ================= SOCIAL LINKS ================= */
+.social-links {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spazio tra le icone */
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #111; /* Sfondo scuro come i contact-item */
+    border: 2px solid #f2c400; /* Bordo Giallo Oro */
+    border-radius: 50%; /* Le rende circolari */
+    transition: 0.3s ease;
+}
+
+.social-links img {
+    width: 25px; /* Dimensione dei loghi */
+    height: 25px;
+    filter: invert(1); /* Rende le icone bianche (se sono nere all'origine) */
+}
+
+.social-links a:hover {
+    background: #b30000; /* Diventa Rosso al passaggio del mouse */
+    border-color: #fff;
+    transform: translateY(-5px); /* Effetto rimbalzo verso l'alto */
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #b30000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .block,
+    .block.right,
+    .block.left,
+    .block.center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-row {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .table-title h2,
+    .faq-title h2 {
+        font-size: 38px;
+    }
+
+    .custom-table th,
+    .custom-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .identity-title {
+        font-size: 30px;
+    }
+
+    .identity-block {
+        padding: 20px;
+    }
+
+        .pdf-title {
+        font-size: 32px;
+    }
+
+    .pdf-group h3 {
+        font-size: 18px;
+    }
+
+    .pdf-group a {
+        font-size: 14px;
+    }
+}

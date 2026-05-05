@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasparenza - Balca Poggese</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-container {
+            padding-top: 160px; /* Spazio per l'header fisso */
+            max-width: 900px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 100px;
+        }
+
+        .info-card {
+            background: #111;
+            border: 1px solid #333;
+            border-left: 5px solid #f2c400; /* Bordo Giallo */
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .info-card h2 {
+            color: #f2c400;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .cookie-link {
+            color: #b30000; /* Rosso */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .cookie-link:hover {
+            color: #f2c400;
+        }
+
+        .contribution-item {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+        }
+
+        .det-title {
+            color: #f2c400;
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .det-title::before {
+            content: "•";
+            color: #b30000;
+            font-size: 25px;
+        }
+
+        .amount {
+            font-size: 24px;
+            color: #fff;
+            margin: 15px 0;
+            display: block;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #ccc;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .page-container { padding-top: 180px; }
+            .info-card { padding: 20px; }
+            .amount { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Balca Poggese S.S.D. a R.L.</h1>
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#societa">Società</a>
+        <a href="index.html#futsal">Futsal</a>
+        <a href="index.html#seconda">Seconda Categoria</a>
+        <a href="index.html#giovanili">Giovanili</a>
+        <a href="index.html#contatti">Contatti</a>
+        <a href="trasparenza.html">Trasparenza</a>
+        <a href="tutela minori.html">Tutela Minori</a>
+        <a href="centro estivo.html">Centro Estivo</a>
+    </nav>
+</header>
+
+<main class="page-container">
+    <div class="info-card">
+        <h2>BALÇA POGGESE</h2>
+        <a href="#" class="cookie-link">Informativa sui Cookie</a>
+        
+        <h3 style="color: #fff; margin-bottom: 20px; font-size: 20px;">
+            CONTRIBUTI EROGATI DAL COMUNE DI MALALBERGO NELL'ANNO 2024
+        </h3>
+
+        <div class="contribution-item">
+            <div class="det-title">DETERMINAZIONE 19 DEL 18/01/2024</div>
+            <span class="amount">€ 7.000,00</span>
+            <p class="description">
+                IMPEGNO DI SPESA PER EROGAZIONE CONTRIBUTI ALLE ASSOCIAZIONI SPORTIVE CONVENZIONATE I° SEMESTRE 2024
+            </p>
+        </div>
+
+        <div class="contribution-item">
+            <div class="det-title">DETERMINAZIONE 426 DEL 24/12/2024</div>
+            <span class="amount">€ 7.000,00</span>
+            <p class="description">
+                IMPEGNO DI SPESA PER EROGAZIONE CONTRIBUTI ALLE ASSOCIAZIONI SPORTIVE CONVENZIONATE II° SEMESTRE 2024
+            </p>
+        </div>
+    </div>
+</main>
+
+<!-- ================= CONTATTI ================= -->
+<section id="contatti" class="contact-section">
+    <h2>Contatti</h2>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            <h3>Indirizzo</h3>
+            <p>
+                Via San Carlo, 62<br>
+                44028 Poggio Renatico (FE)
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Email</h3>
+            <p>
+                segreteria.balcapoggese@gmail.com
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h3>Telefono</h3>
+            <p>
+                +39 348 7002090
+            </p>
+        </div>
+
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/SportingEmiliaPoggese/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/balca_poggese/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@balca_poggese?lang=it-IT" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Balca Poggese S.S.D. a R.L.
+</footer>
+
+</body>
+</html>
