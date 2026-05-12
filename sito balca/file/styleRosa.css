@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.titolo {
+    text-align: center;
+    color: red;
+    padding: 20px 0;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(90deg,#000,#b30000);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:4px solid #f2c400;
+    z-index:1000;
+}
+
+header h1 {
+    color:#f2c400;
+    font-size:22px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#f2c400;
+}
+
+section {
+    padding-top:120px;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 180px;
+    border: 2px solid yellow;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid yellow;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.sezione {
+    margin: 30px;
+}
+
+h2 {
+    color: yellow;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+.griglia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.giocatore {
+    background-color: #000;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.giocatore img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid red;
+}
+
+.nome {
+    margin-top: 8px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 14px;
+}
